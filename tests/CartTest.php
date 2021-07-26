@@ -44,7 +44,7 @@ class CartTest extends TestCase
 
         $item = $this->cart->list()[0];
 
-        $this->assertEquals( 3, $item->qty);
+        $this->assertEquals(3, $item->qty);
     }
 
     public function test_decrease_qty()
@@ -57,7 +57,7 @@ class CartTest extends TestCase
 
         $item = $this->cart->list()[0];
 
-        $this->assertEquals( 2, $item->qty);
+        $this->assertEquals(2, $item->qty);
     }
 
     public function test_decrease_qty_to_zero()
@@ -70,7 +70,7 @@ class CartTest extends TestCase
 
         $count = count($this->cart->list());
 
-        $this->assertEquals( 0, $count);
+        $this->assertEquals(0, $count);
     }
 
     public function test_remove_item()
@@ -81,7 +81,7 @@ class CartTest extends TestCase
 
         $count = count($this->cart->list());
 
-        $this->assertEquals( 0, $count);
+        $this->assertEquals(0, $count);
     }
 
     public function test_total()
@@ -94,7 +94,7 @@ class CartTest extends TestCase
 
         $total = $this->cart->total();
 
-        $this->assertEquals( 16800, $total);
+        $this->assertEquals(16800, $total);
     }
 
     public function test_clear()
@@ -106,7 +106,7 @@ class CartTest extends TestCase
 
         $count = $this->cart->count();
 
-        $this->assertEquals( 0, $count);
+        $this->assertEquals(0, $count);
     }
 
     public function test_add_more_same_item_to_cart()

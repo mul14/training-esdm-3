@@ -75,7 +75,7 @@ class BasketBallTest extends TestCase
 
         $actual = $this->games->homeScore();
 
-        $this->assertEquals( 7, $actual);
+        $this->assertEquals(7, $actual);
     }
 
     public function test_away_accumulation_scores()
@@ -88,6 +88,6 @@ class BasketBallTest extends TestCase
 
         $actual = $this->games->awayScore();
 
-        $this->assertEquals( 9, $actual);
+        $this->assertEquals(9, $actual);
     }
 }

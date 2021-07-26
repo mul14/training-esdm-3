@@ -22,48 +22,56 @@ class NumericaTest extends TestCase
 
         $this->assertEquals(3, $actual);
     }
+
     public function test_last()
     {
         $actual = $this->numerica->last();
 
         $this->assertEquals(2, $actual);
     }
+
     public function test_min()
     {
         $actual = $this->numerica->min();
 
         $this->assertEquals(1, $actual);
     }
+
     public function test_max()
     {
         $actual = $this->numerica->max();
 
         $this->assertEquals(10, $actual);
     }
+
     public function test_sum()
     {
         $actual = $this->numerica->sum();
 
         $this->assertEquals(55, $actual);
     }
+
     public function test_rsort()
     {
         $actual = $this->numerica->rsort();
 
         $this->assertEquals([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], $actual);
     }
+
     public function test_sort()
     {
         $actual = $this->numerica->sort();
 
         $this->assertEquals([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], $actual);
     }
+
     public function test_odd()
     {
         $actual = $this->numerica->odd();
 
         $this->assertEqualsCanonicalizing([1, 3, 5, 7, 9], $actual);
     }
+
     public function test_even()
     {
         $actual = $this->numerica->even();
@@ -77,6 +85,7 @@ class NumericaTest extends TestCase
 
         $this->assertEqualsCanonicalizing([6, 7, 8, 9, 10], $actual);
     }
+
     public function test_greater_than_equal()
     {
         $actual = $this->numerica->greaterThanEqual(5);
@@ -97,6 +106,7 @@ class NumericaTest extends TestCase
 
         $this->assertEqualsCanonicalizing([1, 2, 3, 4, 5], $actual);
     }
+
     public function primes()
     {
         $actual = $this->numerica->primes();
