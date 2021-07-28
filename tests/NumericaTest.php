@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class NumericaTest extends TestCase
 {
-    public Numerica $numerica;
+    public $numerica;
 
     public function setUp(): void
     {

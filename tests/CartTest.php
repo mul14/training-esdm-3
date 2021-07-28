@@ -8,9 +8,9 @@ use PHPUnit\Framework\TestCase;
 
 class CartTest extends TestCase
 {
-    public Cart $cart;
-    private Item $itemMie;
-    private Item $itemWater;
+    public $cart;
+    private $itemMie;
+    private $itemWater;
 
     public function setUp(): void
     {

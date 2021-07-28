@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class BasketBallTest extends TestCase
 {
-    private BasketBall $games;
+    private $games;
 
     public function setUp(): void
     {
